@@ -105,5 +105,5 @@ public enum CallStatus {
         }
     }
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(com.tenacity.pysix.pbx.call.CallStatus.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(com.tenacity.pysix.call.CallStatus.class);
 }

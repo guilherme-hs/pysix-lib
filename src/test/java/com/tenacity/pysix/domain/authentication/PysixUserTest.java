@@ -4,12 +4,7 @@ import com.tenacity.pysix.domain.license.LicenseStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.tenacity.pysix.domain.authentication.PysixUser;
-import com.tenacity.pysix.domain.license.LicenseStatus;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
