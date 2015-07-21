@@ -56,13 +56,19 @@ public class OriginatedCall {
     private long timeout;
 
     /**
-     * Id of the first call
+     * Id of the original action call
      */
     private String originalCallId;
-//    /**
-//     * Id of the second call
-//     */
-//    private String destinationCallId;
+
+    /**
+     * Id of the first leg of the call
+     */
+    private String firstLegId;
+
+    /**
+     * Id of the second leg of the call
+     */
+    private String secondLedId;
 
     public OriginatedCall(){}
 
@@ -118,7 +124,23 @@ public class OriginatedCall {
         return originalCallId;
     }
 
-//    public final String getDestinationCallId() {
+    public String getFirstLegId() {
+        return firstLegId;
+    }
+
+    public void setFirstLegId(String firstLegId) {
+        this.firstLegId = firstLegId;
+    }
+
+    public String getSecondLedId() {
+        return secondLedId;
+    }
+
+    public void setSecondLedId(String secondLedId) {
+        this.secondLedId = secondLedId;
+    }
+
+    //    public final String getDestinationCallId() {
 //        return destinationCallId;
 //    }
 
