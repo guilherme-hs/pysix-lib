@@ -61,6 +61,11 @@ public class OriginatedCall {
     private String originalCallId;
 
     /**
+     * temporary id used in the call
+     */
+    private String tempCallId;
+
+    /**
      * Id of the first leg of the call
      */
     private String firstLegId;
@@ -122,6 +127,14 @@ public class OriginatedCall {
 
     public final String getOriginalCallId() {
         return originalCallId;
+    }
+
+    public String getTempCallId() {
+        return tempCallId;
+    }
+
+    public void setTempCallId(String tempCallId) {
+        this.tempCallId = tempCallId;
     }
 
     public String getFirstLegId() {
