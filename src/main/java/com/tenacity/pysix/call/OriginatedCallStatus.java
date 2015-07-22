@@ -11,11 +11,16 @@ public enum OriginatedCallStatus {
     WAITING,
 
     /**
+     * The call is being dialed
+     */
+    DIALING,
+
+    /**
      * The call is ringing
      */
     RINGING,
 
-    /**
+    /**ß
      * The call was answered
      */
     ANSWERED,
