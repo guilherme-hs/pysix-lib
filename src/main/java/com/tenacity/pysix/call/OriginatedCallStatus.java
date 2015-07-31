@@ -20,10 +20,15 @@ public enum OriginatedCallStatus {
      */
     RINGING,
 
-    /**ß
+    /**
      * The call was answered
      */
     ANSWERED,
+
+    /**
+     * The call was not answered
+     */
+    NOT_ANSWERED,
 
     /**
      * The call was rejected
