@@ -19,5 +19,4 @@ public class PysixAgent {
     protected String memberName;
 
 
-
 }

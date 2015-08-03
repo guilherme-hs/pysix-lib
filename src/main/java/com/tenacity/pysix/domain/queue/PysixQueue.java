@@ -2,7 +2,6 @@ package com.tenacity.pysix.domain.queue;
 
 
 import lombok.Data;
-import org.asteriskjava.manager.event.QueueMemberEvent;
 import org.asteriskjava.manager.event.QueueParamsEvent;
 
 /**
