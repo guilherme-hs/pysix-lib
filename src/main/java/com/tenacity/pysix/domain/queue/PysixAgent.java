@@ -1,12 +1,28 @@
 package com.tenacity.pysix.domain.queue;
 
 import lombok.Data;
+import org.asteriskjava.manager.event.QueueMemberEvent;
 
 /**
  * Represents a pysixAgent
  */
 @Data
 public class PysixAgent {
+
+    public PysixAgent(QueueMemberEvent queueMemberEvent){
+        this.name = queueMemberEvent.getName();
+        this.paused = queueMemberEvent.getPaused();
+        this.status = PysixAgentStatus.fromAsteriskStatus(queueMemberEvent.getStatus());
+        this.location = queueMemberEvent.getLocation();
+        this.penalty = queueMemberEvent.getPenalty();
+        this.queue = queueMemberEvent.getQueue();
+        this.membership = queueMemberEvent.getMembership();
+        this.callsTaken = queueMemberEvent.getCallsTaken();
+        this.lastCall = queueMemberEvent.getLastCall();
+        this.stateInterface = queueMemberEvent.getStateinterface();
+    }
+
+    public PysixAgent(){}
 
     /**
      * Agent name
@@ -17,6 +33,11 @@ public class PysixAgent {
      * Is the member paused on the queue
      */
     protected boolean paused;
+
+    /**
+     * Pysix Agent Status
+     */
+    protected PysixAgentStatus status;
 
     /**
      * Interface used by the agent

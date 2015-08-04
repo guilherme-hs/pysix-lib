@@ -10,6 +10,9 @@ import org.asteriskjava.manager.event.QueueParamsEvent;
 @Data
 public class PysixQueue {
 
+    public PysixQueue(){
+
+    }
 
     public PysixQueue(QueueParamsEvent  queueParamsEvent){
         this.queue = queueParamsEvent.getQueue();

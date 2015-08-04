@@ -12,7 +12,7 @@ import javax.persistence.Table;
  * Represents an Agent
  */
 @Entity
-@Table(catalog = "callcenter",name = "queue_member_table")
+@Table(catalog = "correiodb",name = "queue_member_table")
 public class Agent {
     @Id
     @Column(name="uniqueid")
