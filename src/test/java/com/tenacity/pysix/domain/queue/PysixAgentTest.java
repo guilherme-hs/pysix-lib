@@ -31,7 +31,7 @@ public class PysixAgentTest {
         queueMemberEvent.setPenalty(PENALTY);
         queueMemberEvent.setQueue(ATIVO);
         queueMemberEvent.setStateinterface(STATEINTERFACE);
-        queueMemberEvent.setStatus(1);
+        queueMemberEvent.setStatus(4);
         PysixAgent pysixAgent = new PysixAgent(queueMemberEvent);
         assertThat(pysixAgent.getCallsTaken(), equalTo(CALLS_TAKEN));
         assertThat(pysixAgent.getLastCall(), equalTo(LAST_CALL));
@@ -42,7 +42,7 @@ public class PysixAgentTest {
         assertThat(pysixAgent.getPenalty(), equalTo(PENALTY));
         assertThat(pysixAgent.getQueue(), equalTo(ATIVO));
         assertThat(pysixAgent.getStateInterface(), equalTo(STATEINTERFACE));
-        assertThat(pysixAgent.getStatus(), equalTo(PysixAgentStatus.DEVICE_NOT_IN_USE));
+        assertThat(pysixAgent.getStatus(), equalTo(PysixAgentStatus.DEVICE_INVALID));
     }
 
 
