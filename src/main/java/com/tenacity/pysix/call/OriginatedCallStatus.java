@@ -51,6 +51,11 @@ public enum OriginatedCallStatus {
      */
     BUSY,
 
+    /**
+     * There is no free channels to call the destination
+     */
+    NO_FREE_CHANNEL,
+
 
     /**
      * Unknown status
