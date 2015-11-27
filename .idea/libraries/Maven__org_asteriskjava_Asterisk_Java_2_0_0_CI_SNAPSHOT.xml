@@ -8,6 +8,7 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/asteriskjava/asterisk-java/2.0.0.CI-SNAPSHOT/asterisk-java-2.0.0.CI-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/asteriskjava/asterisk-java/2.0.0.CI-SNAPSHOT/asterisk-java-2.0.0.CI-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

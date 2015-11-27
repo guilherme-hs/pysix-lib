@@ -48,4 +48,13 @@ public class Server {
      */
     protected String version;
 
+    /**
+     * username used to connect in the server
+     */
+    protected String username;
+    /**
+     * password used to connect in the server
+     */
+    protected String password;
+
 }
