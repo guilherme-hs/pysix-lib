@@ -52,6 +52,7 @@ public class Server {
      * username used to connect in the server
      */
     protected String username;
+
     /**
      * password used to connect in the server
      */
