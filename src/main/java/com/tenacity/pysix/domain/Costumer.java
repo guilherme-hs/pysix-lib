@@ -9,10 +9,10 @@ import java.util.Map;
  */
 public class Costumer {
 
-    public String id;
+    protected String id;
 
-    public String name;
+    protected String name;
 
-    public Map<String,License> licenses;
+    protected Map<String,License> licenses;
 
 }
