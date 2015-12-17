@@ -3,6 +3,7 @@ package com.tenacity.pysix.domain;
 import com.tenacity.pysix.domain.license.License;
 import lombok.Data;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -15,6 +16,14 @@ public class Customer {
 
     protected String name;
 
-    protected Map<String,License> licenses;
+    protected Map<String,License> licenses = new HashMap<>();
+
+    protected boolean hasLicense(String licenseName){
+        return licenses.containsKey(licenseName);
+    }
+
+    protected License getLicense(String licenseName){
+        return licenses.get(licenseName);
+    }
 
 }
