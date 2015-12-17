@@ -26,4 +26,9 @@ public class Customer {
         return licenses.get(licenseName);
     }
 
+    protected Customer addLicense(License license){
+        this.licenses.put(license.getName(),license);
+        return this;
+    }
+
 }
