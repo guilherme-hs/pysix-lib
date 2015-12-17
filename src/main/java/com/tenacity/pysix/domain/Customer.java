@@ -5,9 +5,9 @@ import com.tenacity.pysix.domain.license.License;
 import java.util.Map;
 
 /**
- * Represents a Costumer
+ * Represents a Customer
  */
-public class Costumer {
+public class Customer {
 
     protected String id;
 
